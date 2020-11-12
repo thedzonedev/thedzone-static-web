@@ -1,0 +1,11 @@
+.imageHover {
+  position: relative;
+  transform: perspective(1400px) rotateY(-20deg) rotateX(10deg) rotateZ(6deg)
+    scale(0.8) translateX(30%) translateY(6%);
+  transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+
+.imageHover:hover {
+  transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) scale(1) translateX(20%)
+    translateY(4%);
+}
