@@ -10,13 +10,16 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '1.2em',
         padding: theme.spacing(0, 4),
         color: 'rgba(0,0,0,0.8)'
+    },
+    gapBetweenComponents: {
+        marginBottom: '10em'
     }
 }));
 
 export default function FullMainScreen() {
     const classes = useStyles()
     return (
-        <Container>
+        <Container className={classes.gapBetweenComponents}>
             <Row>
                 <Col md={{ span: 6, offset: 3 }}>
                     <h6 style={{ fontWeight: "bold", color: "grey" }}>WHY YOU CHOOSE US?</h6>

@@ -15,13 +15,16 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '1.2em',
         color: 'white',
         textAlign: 'left'
+    },
+    gapBetweenComponents: {
+        marginBottom: '10em'
     }
 }));
 
 export default function HoverClass() {
     const classes = useStyles()
     return (
-        <Container fluid>
+        <Container fluid className={classes.gapBetweenComponents}>
             <hr style={{ margin: 0, padding: 0, height: '0.1vh' }} />
             <Row style={{ backgroundColor: "#3D80E4", height: '70vh' }}>
                 <Col md={{ span: 5, offset: 1 }} style={{ height: '100%', display: 'table' }}>

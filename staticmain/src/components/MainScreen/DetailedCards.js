@@ -10,6 +10,9 @@ const useStyles = makeStyles((theme) => ({
     fontSizeForDetail: {
         fontSize: '1.2em',
         color: 'rgba(0,0,0,0.5)'
+    },
+    gapBetweenComponents: {
+        marginBottom: '10em'
     }
 }));
 
@@ -17,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 export default function DetailedCards() {
     const classes = useStyles();
     return (
-        <Container fluid>
+        <Container fluid className={classes.gapBetweenComponents}>
             <Row>
                 <Col md={{ span: 4, offset: 2 }} style={{ textAlign: "left" }}>
                     <p className={classes.fontSizeForHeading}>Anywhere & Anytime</p>

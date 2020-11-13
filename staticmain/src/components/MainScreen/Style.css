@@ -9,3 +9,13 @@
   transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) scale(1) translateX(20%)
     translateY(4%);
 }
+.backgroundclass {
+  border-radius: 20px;
+  padding: 25px 40px;
+  background-image: url("./pricing-bg.svg");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: -1px -1px;
+  background-size: 102% 160px;
+  border-color: rgba(255, 255, 255, 0.3);
+}

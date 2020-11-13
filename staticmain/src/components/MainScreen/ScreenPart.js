@@ -12,16 +12,20 @@ const useStyles = makeStyles((theme) => ({
     fontSizeForDetail: {
         fontSize: '0.9em',
         textAlign: 'left',
-        color: 'white'
+        color: 'white',
+        lineHeight: '1.8'
     },
+    gapBetweenComponents: {
+        marginBottom: '10em'
+    }
 
 }));
 
 export default function ScreenPart() {
     const classes = useStyles();
     return (
-        <Container fluid>
-            <Row style={{ height: 502 }}>
+        <Container fluid className={classes.gapBetweenComponents}>
+            <Row style={{ height: '100vh' }}>
                 <Col md={{ span: 6 }} style={{ height: '100%', backgroundColor: '#3D80E4', display: "table" }}>
                     <div className="align-middle" style={{ display: "table-cell" }}>
                         <Row>
@@ -46,7 +50,7 @@ export default function ScreenPart() {
                         </Row>
                     </div>
                 </Col>
-                <Col md={{ span: 5 }} style={{ padding: 0 }} >
+                <Col md={{ span: 6 }} style={{ padding: 0 }} >
                     <img src="https://assets.kogan.com/images/brus-australia/BRS-APPLE-IPHONE-X-64GB-SILVER/1-e79347f3ad-iphone-x-silver3-500x500.jpg?auto=webp&canvas=753%2C502&fit=bounds&height=502&quality=75&width=753" />
                 </Col>
             </Row>

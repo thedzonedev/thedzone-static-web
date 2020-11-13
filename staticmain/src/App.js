@@ -7,6 +7,10 @@ import DetailedCards from './components/MainScreen/DetailedCards';
 import ScreenPart from './components/MainScreen/ScreenPart';
 import HoverClass from './components/MainScreen/HoverClass';
 import VersionFaster from './components/MainScreen/VersionFaster';
+import Charges from './components/MainScreen/Charges';
+import FAQS from './components/MainScreen/FAQS';
+import Experienced from './components/MainScreen/Experienced';
+
 
 function App() {
   return (
@@ -17,6 +21,8 @@ function App() {
       <DetailedCards />
       <ScreenPart />
       <VersionFaster />
+      <Charges />
+      <Experienced />
     </div>
   );
 }
