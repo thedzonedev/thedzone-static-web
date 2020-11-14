@@ -10,6 +10,8 @@ import VersionFaster from './components/MainScreen/VersionFaster';
 import Charges from './components/MainScreen/Charges';
 import FAQS from './components/MainScreen/FAQS';
 import Experienced from './components/MainScreen/Experienced';
+import Helpform from './components/MainScreen/Helpform';
+import Footer from './components/MainScreen/Footer';
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
       <VersionFaster />
       <Charges />
       <Experienced />
+      <Helpform />
+      <Footer />
     </div>
   );
 }

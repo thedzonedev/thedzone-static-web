@@ -1,13 +1,13 @@
 .imageHover {
   position: relative;
   transform: perspective(1400px) rotateY(-20deg) rotateX(10deg) rotateZ(6deg)
-    scale(0.8) translateX(30%) translateY(6%);
+    scale(0.8) translateX(25%) translateY(0%);
   transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.3, 1);
 }
 
 .imageHover:hover {
   transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) scale(1) translateX(20%)
-    translateY(4%);
+    translateY(0%);
 }
 .backgroundclass {
   border-radius: 20px;
@@ -18,4 +18,19 @@
   background-position: -1px -1px;
   background-size: 102% 160px;
   border-color: rgba(255, 255, 255, 0.3);
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  line-height: 10em;
+}
+::-webkit-input-placeholder {
+  /* Webkit */
+  line-height: 10em;
+}
+:-ms-input-placeholder {
+  /* IE */
+  line-height: 10em;
+}
+input#move[type="text"]::placeholder {
+  transform: translateY(-3.2em);
 }

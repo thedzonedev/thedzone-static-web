@@ -20,14 +20,14 @@ const useStyles = makeStyles((theme) => ({
 export default function VersionFaster() {
     const classes = useStyles()
     return (
-        <Container fluid className={classes.gapBetweenComponents}  style={{ height: '70vh'  }}>
+        <Container fluid className={classes.gapBetweenComponents}  style={{ height: '90vh'  }}>
             <Row style={{ height: '100%' }}>
-                <Col md={{span:4, offset:1}}>
+                <Col md={{span:6}} style={{textAlign:'left',padding:0}}>
                 <img style={{
-                    height: '70vh'
-                }}src="https://i.pinimg.com/originals/54/b9/72/54b972c504b660f6e7905ff1242245c9.png"/>
+                    height: '90vh'
+                }}src="./section2.jpg"/>
                 </Col>
-                <Col md={{span:5, offset:1}}  style={{ height: '100%', display: 'table' }} >
+                <Col md={{span:6}}  style={{ height: '100%', display: 'table' }} >
                     <div className="align-middle" style={{ display: "table-cell" }}>
                     <p className={classes.fontSizeForTitle}>Version 6 is now 2x Faster.</p>
                     <p className={classes.fontSizeForDesc}>Enthusiastically morph unique web-readiness via impactful platforms. Intrinsicly matrix premium expertise for diverse expertise. Intrinsicly drive collaborative bandwidth for accurate testing.</p>

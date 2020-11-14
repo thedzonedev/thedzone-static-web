@@ -25,7 +25,7 @@ export default function ScreenPart() {
     const classes = useStyles();
     return (
         <Container fluid className={classes.gapBetweenComponents}>
-            <Row style={{ height: '100vh' }}>
+            <Row style={{ height: '105vh' }}>
                 <Col md={{ span: 6 }} style={{ height: '100%', backgroundColor: '#3D80E4', display: "table" }}>
                     <div className="align-middle" style={{ display: "table-cell" }}>
                         <Row>
@@ -50,8 +50,8 @@ export default function ScreenPart() {
                         </Row>
                     </div>
                 </Col>
-                <Col md={{ span: 6 }} style={{ padding: 0 }} >
-                    <img src="https://assets.kogan.com/images/brus-australia/BRS-APPLE-IPHONE-X-64GB-SILVER/1-e79347f3ad-iphone-x-silver3-500x500.jpg?auto=webp&canvas=753%2C502&fit=bounds&height=502&quality=75&width=753" />
+                <Col md={{ span: 6 }} style={{ height: '100%', padding: 0, overflowY: 'hidden' }} >
+                    <img style={{ width: '100%' }} src="./section.jpg" />
                 </Col>
             </Row>
         </Container>

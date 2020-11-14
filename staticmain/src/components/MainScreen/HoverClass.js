@@ -35,9 +35,11 @@ export default function HoverClass() {
                         </Col>
                     </Row>
                 </Col>
-                <Col md={{ span: 4 }}>
-                    <img className="imageHover" style={{ width: "80%" }}
-                        src='https://i.pinimg.com/originals/54/b9/72/54b972c504b660f6e7905ff1242245c9.png' />
+                <Col md={{ span: 6 }} style={{ textAlign: 'left' }}>
+                    <img class="align-bottom" style={{ width: "50%", marginTop: '-20px' }}
+                        src='./creditcard.png' />
+                    <img className="imageHover align-bottom" style={{ width: "43%", left: '-200px' }}
+                        src='./mobilescreen.png' />
                 </Col>
             </Row>
         </Container>
