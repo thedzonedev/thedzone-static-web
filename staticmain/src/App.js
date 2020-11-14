@@ -16,7 +16,7 @@ import Footer from './components/MainScreen/Footer';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ fontFamily: 'Montserrat, sans-serif' }}>
       <Header />
       <HoverClass />
       <FullMainScreen />
