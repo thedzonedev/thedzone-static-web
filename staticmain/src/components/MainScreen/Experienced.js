@@ -2,6 +2,10 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { makeStyles } from '@material-ui/core';
 import './Style.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDesktop } from '@fortawesome/free-solid-svg-icons'
+import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
+import { faLifeRing } from '@fortawesome/free-solid-svg-icons'
 
 const useStyles = makeStyles((theme) => ({
     fontSizeForTitle: {
@@ -39,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Experienced() {
     const classes = useStyles();
     return (
-        <Container fluid className={classes.gapBetweenComponents}>
+        <Container fluid >
             <Row>
                 <Col md={{ span: 6 }} style={{ textAlign: 'center' }}>
                     <Row>
@@ -49,10 +53,12 @@ export default function Experienced() {
                     <Row>
                         <Col className={classes.fontSizeForDesc} md={{ span: 10, offset: 2 }} >Enthusiastically morph unique web-readiness via impactful platforms. Intrinsicly matrix premium expertise for diverse expertise. Intrinsicly drive collaborative bandwidth for accurate testing.</Col>
                     </Row><br /><br />
-                    <Row >
+                    <Row>
                         <Col md={{ span: 1, offset: 2 }} >
                             <Row>
-                                <p>icon</p>
+                                <p><FontAwesomeIcon icon={faDesktop} className="text-primary" style={{
+                                    fontSize: "30px"
+                                }} /></p>
                             </Row>
                         </Col><br />
                         <Col md={{ span: 7, offset: 0 }} >
@@ -67,7 +73,9 @@ export default function Experienced() {
                     <Row>
                         <Col md={{ span: 1, offset: 2 }}>
                             <Row>
-                                <p>icon</p>
+                                <p><FontAwesomeIcon icon={faLightbulb} className="text-warning" style={{
+                                    fontSize: "30px"
+                                }} /></p>
                             </Row>
                         </Col><br />
                         <Col md={{ span: 7, offset: 0 }} >
@@ -82,7 +90,9 @@ export default function Experienced() {
                     <Row>
                         <Col md={{ span: 1, offset: 2 }} >
                             <Row>
-                                <p>icon</p>
+                                <p><FontAwesomeIcon icon={faLifeRing} className="text-danger" style={{
+                                    fontSize: "30px"
+                                }} /></p>
                             </Row>
                         </Col><br />
                         <Col md={{ span: 7, offset: 0 }} >
@@ -94,6 +104,9 @@ export default function Experienced() {
                             </Row>
                         </Col>
                     </Row>
+                </Col>
+                <Col md={{ span: 6 }}>
+                    <img src="./iphone-hand.png" />
                 </Col>
             </Row>
         </Container>

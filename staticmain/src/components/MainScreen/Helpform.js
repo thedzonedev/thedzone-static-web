@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     gapBetweenComponents: {
         marginBottom: '10em',
         paddingTop: '5em',
-        height: "120vh"
+        height: "55em"
     },
     inputStyling: {
         height: '3em',

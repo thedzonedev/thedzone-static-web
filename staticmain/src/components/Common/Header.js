@@ -4,16 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import InputBase from '@material-ui/core/InputBase';
-import Badge from '@material-ui/core/Badge';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
-import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import MailIcon from '@material-ui/icons/Mail';
-import NotificationsIcon from '@material-ui/icons/Notifications';
-import MoreIcon from '@material-ui/icons/MoreVert';
+import './Common.css'
 
 const useStyles = makeStyles((theme) => ({
     grow: {
@@ -23,10 +14,7 @@ const useStyles = makeStyles((theme) => ({
         marginRight: theme.spacing(2),
     },
     title: {
-        display: 'none',
-        [theme.breakpoints.up('sm')]: {
-            display: 'block',
-        },
+        display: 'block'
     },
     sectitle: {
         display: 'none',
@@ -56,6 +44,7 @@ const useStyles = makeStyles((theme) => ({
         position: 'relative',
         pointerEvents: 'none',
         display: 'flex',
+        textAlign: 'left',
         alignItems: 'center',
         justifyContent: 'center',
     },
@@ -92,15 +81,12 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Header() {
     const classes = useStyles();
+    const [show, setShow] = React.useState(null);
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
     const isMenuOpen = Boolean(anchorEl);
     const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-    const handleProfileMenuOpen = (event) => {
-        setAnchorEl(event.currentTarget);
-    };
 
     const handleMobileMenuClose = () => {
         setMobileMoreAnchorEl(null);
@@ -112,7 +98,18 @@ export default function Header() {
     };
 
     const handleMobileMenuOpen = (event) => {
-        setMobileMoreAnchorEl(event.currentTarget);
+        if (!show) {
+            document.getElementById('line2').setAttribute('class', 'line2hide')
+            document.getElementById('line1').setAttribute('class', 'rotateminus45')
+            document.getElementById('line3').setAttribute('class', 'rotate45')
+            setShow(true)
+        }
+        else {
+            document.getElementById('line2').setAttribute('class', '')
+            document.getElementById('line1').setAttribute('class', '')
+            document.getElementById('line3').setAttribute('class', '')
+            setShow(false)
+        }
     };
 
     return (
@@ -141,19 +138,39 @@ export default function Header() {
                         </Typography>
                     </div>
                     <div className={classes.sectionMobile}>
-                        <Typography variant="h6" className={classes.searchIcon} noWrap>
-                            CANVAS
-                        </Typography>
                         <IconButton
                             aria-label="show more"
                             aria-haspopup="true"
                             onClick={handleMobileMenuOpen}
                             color="inherit"
+                            style={{
+                                textDecoration: "none"
+                            }}
                         >
-                            <MenuIcon />
+                            <div id='toggle' class="burger">
+                                <div id='line1'></div>
+                                <div id='line2'></div>
+                                <div id='line3'></div>
+                            </div>
                         </IconButton>
+
                     </div>
                 </Toolbar>
+                {show ?
+                    <div style={{
+                        background: "white",
+                        color: 'black'
+                    }} >
+                        <ul style={{
+                            listStyle: 'none',
+                        }}>
+                            <li>Home</li>
+                            <li>Features</li>
+                            <li>About</li>
+                            <li>Pricing</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div> : <div></div>}
             </AppBar>
         </div>
     );

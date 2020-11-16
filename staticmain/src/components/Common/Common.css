@@ -1,0 +1,24 @@
+li {
+  text-align: left;
+  padding: 0.4em;
+}
+
+.burger div {
+  background-color: white;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.rotate45 {
+  transform: rotate(45deg) translate(-5px, -6px);
+  transition: transform 0.4s ease-in;
+}
+.line2hide {
+  opacity: 0;
+}
+.rotateminus45 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  transition: transform 0.4s ease-in;
+}

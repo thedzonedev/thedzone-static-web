@@ -20,11 +20,11 @@ const useStyles = makeStyles((theme) => ({
 export default function VersionFaster() {
     const classes = useStyles()
     return (
-        <Container fluid className={classes.gapBetweenComponents}  style={{ height: '90vh'  }}>
+        <Container fluid className={classes.gapBetweenComponents}  style={{ height: '40em'  }}>
             <Row style={{ height: '100%' }}>
                 <Col md={{span:6}} style={{textAlign:'left',padding:0}}>
                 <img style={{
-                    height: '90vh'
+                    height: '40em'
                 }}src="./section2.jpg"/>
                 </Col>
                 <Col md={{span:6}}  style={{ height: '100%', display: 'table' }} >

@@ -25,7 +25,7 @@ export default function ScreenPart() {
     const classes = useStyles();
     return (
         <Container fluid className={classes.gapBetweenComponents}>
-            <Row style={{ height: '105vh' }}>
+            <Row style={{ height: '49em' }}>
                 <Col md={{ span: 6 }} style={{ height: '100%', backgroundColor: '#3D80E4', display: "table" }}>
                     <div className="align-middle" style={{ display: "table-cell" }}>
                         <Row>

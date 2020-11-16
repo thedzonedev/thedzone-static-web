@@ -3,6 +3,8 @@ import { Row, Col, Container } from 'react-bootstrap'
 import { makeStyles } from '@material-ui/core';
 import './Style.css'
 import FAQS from './FAQS';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 
 const useStyles = makeStyles((theme) => ({
     fontSizeForTitle: {
@@ -44,7 +46,7 @@ export default function Charges(props) {
     const classes = useStyles();
     return (
         <div className={classes.backgroundColorChange} onScroll={() => handleScroll(classes.backgroundColorChange)}>
-            <Container fluid style={{ height: '100vh', display: "table" }}>
+            <Container fluid style={{ height: '48em', display: "table" }}>
                 <div className="align-middle" style={{ display: "table-cell", overflowX: 'hidden' }}>
                     <Row>
                         <Col md={{ span: 4, offset: 1 }} style={{ padding: 0 }}>
@@ -88,31 +90,46 @@ export default function Charges(props) {
                                             color: 'grey',
                                             fontSize: '1em'
                                         }}>
-                                            <td className={classes.padding5}>7 Days Free Trail</td>
+                                            <td className={classes.padding5}><FontAwesomeIcon className="text-primary" icon={faCheckCircle}
+                                                style={{
+                                                    marginRight: '5px'
+                                                }} />7 Days Free Trail</td>
                                         </tr>
                                         <tr style={{
                                             color: 'grey',
                                             fontSize: '1em'
                                         }}>
-                                            <td className={classes.padding5}>App-In-Purchase</td>
+                                            <td className={classes.padding5}><FontAwesomeIcon className="text-primary" icon={faCheckCircle}
+                                                style={{
+                                                    marginRight: '5px'
+                                                }} />App-In-Purchase</td>
                                         </tr>
                                         <tr style={{
                                             color: 'grey',
                                             fontSize: '1em'
                                         }}>
-                                            <td className={classes.padding5}>100% Safe & Secure</td>
+                                            <td className={classes.padding5}><FontAwesomeIcon className="text-primary" icon={faCheckCircle}
+                                                style={{
+                                                    marginRight: '5px'
+                                                }} />100% Safe & Secure</td>
                                         </tr>
                                         <tr style={{
                                             color: 'grey',
                                             fontSize: '1em'
                                         }}>
-                                            <td className={classes.padding5}>Liecenced Company</td>
+                                            <td className={classes.padding5}><FontAwesomeIcon className="text-primary" icon={faCheckCircle}
+                                                style={{
+                                                    marginRight: '5px'
+                                                }} />Liecenced Company</td>
                                         </tr>
                                         <tr style={{
                                             color: 'grey',
                                             fontSize: '1em'
                                         }}>
-                                            <td className={classes.padding5}>No Hidden Charges</td>
+                                            <td className={classes.padding5}><FontAwesomeIcon className="text-primary" icon={faCheckCircle}
+                                                style={{
+                                                    marginRight: '5px'
+                                                }} />No Hidden Charges</td>
                                         </tr><br />
                                         <tr style={{ textAlign: 'center' }}>
                                             <td><button className="btn btn-primary btn-block" style={{ height: "3em" }} >DOWNLOAD FREE</button></td>
@@ -153,31 +170,46 @@ export default function Charges(props) {
                                             color: 'grey',
                                             fontSize: '1em'
                                         }}>
-                                            <td className={classes.padding5}>One Time Purchase</td>
+                                            <td className={classes.padding5}><FontAwesomeIcon className="text-primary" icon={faCheckCircle}
+                                                style={{
+                                                    marginRight: '5px'
+                                                }} />One Time Purchase</td>
                                         </tr>
                                         <tr style={{
                                             color: 'grey',
                                             fontSize: '1em'
                                         }}>
-                                            <td className={classes.padding5}>All Bundle Included</td>
+                                            <td className={classes.padding5}><FontAwesomeIcon className="text-primary" icon={faCheckCircle}
+                                                style={{
+                                                    marginRight: '5px'
+                                                }} />All Bundle Included</td>
                                         </tr>
                                         <tr style={{
                                             color: 'grey',
                                             fontSize: '1em'
                                         }}>
-                                            <td className={classes.padding5}>100% Safe & Secure</td>
+                                            <td className={classes.padding5}><FontAwesomeIcon className="text-primary" icon={faCheckCircle}
+                                                style={{
+                                                    marginRight: '5px'
+                                                }} />100% Safe & Secure</td>
                                         </tr>
                                         <tr style={{
                                             color: 'grey',
                                             fontSize: '1em'
                                         }}>
-                                            <td className={classes.padding5}>Liecenced Company</td>
+                                            <td className={classes.padding5}><FontAwesomeIcon className="text-primary" icon={faCheckCircle}
+                                                style={{
+                                                    marginRight: '5px'
+                                                }} />Liecenced Company</td>
                                         </tr>
                                         <tr style={{
                                             color: 'grey',
                                             fontSize: '1em'
                                         }}>
-                                            <td className={classes.padding5}>No Hidden Charges</td>
+                                            <td className={classes.padding5}><FontAwesomeIcon className="text-primary" icon={faCheckCircle}
+                                                style={{
+                                                    marginRight: '5px'
+                                                }} />No Hidden Charges</td>
                                         </tr><br />
                                         <tr style={{ textAlign: 'center' }}>
                                             <td><button className="btn btn-primary btn-block" style={{ height: "3em" }} >PURCHASE PRO</button></td>
